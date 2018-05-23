@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>portfolio site</title>
+      <meta name="viewport" content="width=device-width, initial-scale=0.8">
+      <link rel="stylesheet" type="text/css" href="gk.css"> 
+   </head>
+   <body>
+   
+      <div class="img1"><img src="https://bit.ly/2GGJgY5" alt="sun risers team symbol" height="100" width="100" class="img1" ></div>
+      <h2>SUNRISERS HYDERABAD TEAM</h2>
+      <hr>
+      <div class="slideshow-container">
+         <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://bit.ly/2LjuOZr" alt="sunrisers motive" style="width:100%;height:400px">
+            <div class="text">Image one</div>
+         </div>
+         <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://bit.ly/2IVP5Wz" alt="sunrisers celebrations" style="width:100%;height:400px">
+            <div class="text">Image Two</div>
+         </div>
+         <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://bit.ly/2KMD6bb" alt="sunrisers squad" style="width:100%;height:400px">
+            <div class="text">Image Three</div>
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      <br><br><br><br>
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+         }
+      </script>
+      <div class="container">
+         <div class="p1" >
+            <a href="https://en.wikipedia.org/wiki/Kane_Williamson"><img  src="https://bit.ly/2GGUuLY" alt="kane williamson profile" height="200" style="width:45%" ></a>
+            <p>Kane-Williamson (Captain)</p>
+         </div>
+         <div class="p2" >
+            <a href="https://en.wikipedia.org/wiki/Shikhar_Dhawan"><img  src="https://bit.ly/2rY6UKa" alt="shikhar dhawan profile" height="200" style="width:45%" ></a>
+            <p>Shikhar-Dhawan (Vice-captain)</p>
+         </div>
+         <div class="p3" >
+            <a href="https://en.wikipedia.org/wiki/Alex_Hales" ><img src="https://bit.ly/2IAKHgg" alt="alex hales profile" height="200" style="width:45%" ></a>
+            <p>Alex-Hales</p>
+         </div>
+         <div class="p4" >
+            <a href="https://en.wikipedia.org/wiki/Manish_Pandey" ><img  src="https://bit.ly/2IBUx1H" alt="manish pandey profile" height="200" style="width:45%"></a>
+            <p>Manish-Pandey</p>
+         </div>
+         <div class="p4" >
+            <a href="https://en.wikipedia.org/wiki/Wriddhiman_Saha" ><img  src="https://bit.ly/2KKU8qi" alt="wriddhiman saha profile" height="200" style="width:45%" ></a>
+            <p>Wriddhiman-Saha (Wicket-Keeper)</p>
+         </div>
+         <div class="p6" >
+            <a href="https://en.wikipedia.org/wiki/Yusuf_Pathan"><img src="https://bit.ly/2IYxRYM" alt="yusuf pathan profile" height="200" style="width:45%" ></a>
+            <p>Yusuf-Pathan</p>
+         </div>
+         <div class="p7" >
+            <a href="https://en.wikipedia.org/wiki/Deepak_Hooda" ><img  src="https://bit.ly/2IFf7tK" alt="deepak hooda profile" height="200" style="width:45%" ></a>
+            <p>Deepak-Hooda</p>
+         </div>
+         <div class="p8" >
+            <a href="https://en.wikipedia.org/wiki/Mohammad_Nabi" ><img  src="https://bit.ly/2s0yvLy" alt="mohammad nabi profile" height="200" style="width:45%" ></a>
+            <p>Mohammad-Nabi</p>
+         </div>
+         <div class="p9" >
+            <a href="https://en.wikipedia.org/wiki/Siddarth_Kaul"><img  src="https://bit.ly/2rZwYFG" alt="siddarth kaul profile" height="200" style="width:45%" ></a>
+            <p>Siddarth-Kaul</p>
+         </div>
+         <div class="p10" >
+            <a href="https://en.wikipedia.org/wiki/Rashid_Khan_(Afghan_cricketer)"><img  src="https://bit.ly/2kcJ7T8" alt="rashid khan profile" height="200" style="width:45%" ></a>
+            <p>Rashid-Khan</p>
+         </div>
+         <div class="p11">
+            <a href="https://en.wikipedia.org/wiki/Bhuvneshwar_Kumar" ><img  src="https://bit.ly/2J1gdUb" alt="bhuvneshwar kumar profile" height="200" style="width:45%" ></a>
+            <p>Bhuvneshwar-Kumar</p>
+         </div>
+      </div>
+   </body>
+</html>
